@@ -84,7 +84,8 @@
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 126px 0 134px;
 }
 .container .texts > h1 {
   color: #fff;
@@ -123,7 +124,7 @@
   padding-top: 68px;
 }
 .container .texts {
-  width: 507px;
+  /* width: 507px; */
 }
 
 /* -=-=-=-==-=-=--=-=-=-=-=-=-=-=location section style-=-=--=--=-=-=-=-=-= */
@@ -170,22 +171,22 @@
 #coming {
   width: 1320px;
   margin: 0 auto;
-  background-color: aquamarine;
 }
 
 #coming .offer-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
+  gap: 100px;
 }
 .offer-text > p {
   /* max-width: 393px; */
 }
-.offer-container .offer-img {
-  width: 364px;
+.offer-img {
+  width: 100%;
 }
 .offer-container .offer-img > img {
-  border-radius: 463px;
+  border-radius: 100%;
   border: 15px solid #f00;
   padding: 50px;
 }
@@ -200,7 +201,7 @@
   margin: 120px auto;
 }
 
- #portfolio .portfolio-div .portfolio-texts > h3 {
+#portfolio .portfolio-div .portfolio-texts > h3 {
   color: #f00;
   font-family: Inter;
   font-size: 24px;
@@ -232,6 +233,54 @@
   width: 869px;
 }
 
-
-
 /* -==-==-=-=-====-=-==-=-==-==-==--=-=-=-=-==subscrube style-=-==-==-=-==-=-=-=- */
+
+#subscribe {
+  width: 1320px;
+  margin: 120px auto;
+  background: rgba(255, 0, 0, 0.05);
+  border-radius: 16px;
+  padding: 50px 0 50px 0;
+
+
+}
+
+.subscribe-container {
+  text-align: center;
+}
+.subscribe-container > h2 {
+  color: #070211;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 48px;
+  font-weight: 900;
+}
+.subscribe-container > p {
+  color: rgba(7, 2, 17, 0.6);
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  /* width: 896px; */
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.btn * {
+  margin-bottom: 80px;
+}
+.email {
+  padding: 24px 56px;
+  border-radius: 50px 0 0 50px;
+  border: none;
+}
+.subscribe-btn {
+  border-radius: 0px 50px 50px 0px;
+  background: #f00;
+  padding: 24px 56px;
+  position: relative;
+  right: 5px;
+  border: none;
+  color: white;
+  /* font-size: 20px; */
+  font-family: inter;
+}
